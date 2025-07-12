@@ -48,7 +48,7 @@ model.compile(loss='binary_crossentropy',
 history = model.fit(
     train_pad,
     y_train,
-    epochs=50,
+    epochs=100,
     batch_size=32,
     validation_split=0.2
 )

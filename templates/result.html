@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo">
+        <h1>Sentiment Analysis</h1>
+    </div>
+    <div class="container">
+        <p class="result {{ sentiment | lower }}">
+            Predicted Sentiment: <strong>{{ sentiment }}</strong>
+        </p>
+        <a href="/" class="back-link">Analyze another review</a>
+    </div>
+</body>
+</html>

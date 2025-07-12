@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo">
+        <h1>Sentiment Analysis</h1>
+    </div>
+    <div class="container">
+        <form method="post" action="/predict">
+            <textarea name="review" rows="6" placeholder="Enter your review here..."></textarea>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+    </div>
+</body>
+</html>
